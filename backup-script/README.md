@@ -16,3 +16,7 @@ Script de automação de backup desenvolvido em Shell Script.
 - Bash
 - Linux
 
+## Como executar
+
+chmod +x backup.sh
+./backup.sh
