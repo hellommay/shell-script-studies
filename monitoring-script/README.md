@@ -16,5 +16,7 @@ Script para monitoramento básico do sistema Linux.
 
 ## Como executar
 
+```bash
 chmod +x sysmon.sh
 ./sysmon.sh
+```
