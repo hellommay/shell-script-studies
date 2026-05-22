@@ -14,3 +14,7 @@ Repositório dedicado aos meus estudos de Shell Script.
 
 ## Objetivo
 Desenvolver base sólida em automação, administração Linux e fundamentos para DevOps/DevSecOps.
+
+## Aprendizado
+
+⚠️ Projeto desenvolvido para estudo e prática utilizando videoaulas, pesquisas e documentação técnica.
