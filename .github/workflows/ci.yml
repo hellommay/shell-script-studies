@@ -4,7 +4,6 @@ on:
   push:
     branches:
       - main
-
   pull_request:
     branches:
       - main
@@ -16,14 +15,11 @@ jobs:
     steps:
       - name: Checkout do código
         uses: actions/checkout@v4
-
-      - name: Instalar ShellCheck
-        run: sudo apt-get update && sudo apt-get install -y shellcheck
-
-      - name: Verificar scripts .sh
+        
+      - name: Verificar scripts .sh com ShellCheck
         run: |
-          find . -type f -name "*.sh" -exec shellcheck {} \;
+          find . -type f -name "*.sh" -print0 | xargs -0 shellcheck
 
-      - name: Testar sintaxe bash
+      - name: Testar sintaxe bash (Dry-run)
         run: |
-          find . -type f -name "*.sh" -exec bash -n {} \;
+          find . -type f -name "*.sh" -print0 | xargs -0 -I {} bash -n {}
