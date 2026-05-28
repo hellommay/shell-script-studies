@@ -52,13 +52,13 @@ fi
 
 # remocao de backups antigos
 
-TOTAL_BACKUPS=$(ls -1 "$BACKUP_DIR" | wc -l)
+TOTAL_BACKUPS=$(find "$BACKUP_DIR" maxdepth 1 -type f -printf '.' | wc -l)
 
 if [ "$TOTAL_BACKUPS" -gt "$MAX_BACKUPS" ]; then
     
-    REMOVE=$(($TOTAL_BACKUPS - $MAX_BACKUPS))
+    REMOVE=$((TOTAL_BACKUPS - MAX_BACKUPS))
 
-    ls -1t "$BACKUP_DIR" | tail -n "$REMOVE" | while read FILE
+    ls -1t "$BACKUP_DIR" | tail -n "$REMOVE" | while read -r FILE
     do
        rm "$BACKUP_DIR/$FILE"
        echo "[$DATE] Backup antigo removido: $FILE" >> "$LOG_FILE"

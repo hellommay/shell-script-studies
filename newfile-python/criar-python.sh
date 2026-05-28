@@ -1,7 +1,7 @@
 #!/bin/bash
 
 # nome do projeto
-read -p "Nome do projeto: " projeto
+read -rp "Nome do projeto: " projeto
 
 # criar e entrar na pasta
 mkdir "$projeto"
@@ -11,6 +11,7 @@ cd "$projeto" || exit
 # criando e ativando ambiente virtual
 python3 -m venv venv
 
+# shellcheck disable=SC1091
 source venv/bin/activate
 
 # estrutura basica
