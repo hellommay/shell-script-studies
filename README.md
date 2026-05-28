@@ -1,7 +1,7 @@
 # Shell Script Studies
-![CI](https://github.com/hellommay/shell-script-studies/actions/workflows/ci.yml/badge.svg)
+[![Shell Script CI](https://github.com/hellommay/shell-script-studies/actions/workflows/ci.yml/badge.svg)](https://github.com/hellommay/shell-script-studies/actions/workflows/ci.yml)
 
-Repositório dedicado aos meus estudos de Shell Script, Automação e Linux.
+Repositório dedicado aos meus estudos de Shell Script.
 
 ## Conteúdo
 - Variáveis
