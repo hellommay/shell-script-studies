@@ -1,5 +1,5 @@
 # Shell Script Studies
-[![Shell Script CI](https://github.com/hellommay/shell-script-studies/actions/workflows/ci.yml/badge.svg)](https://github.com/hellommay/shell-script-studies/actions/workflows/ci.yml)
+[![Shell Script CI](https://github.com/mayaracsoares/shell-script-studies/actions/workflows/ci.yml/badge.svg)](https://github.com/mayaracsoares/shell-script-studies/actions/workflows/ci.yml)
 
 Repositório dedicado aos meus estudos de Shell Script.
 
